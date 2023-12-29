@@ -1,0 +1,27 @@
+.section_06 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+
+    .title {
+        max-width: 28rem;
+        font-size: 2.3rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        color: #4F5665;
+        max-width: 38rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section_06 {
+        flex-direction: column;
+    }
+}

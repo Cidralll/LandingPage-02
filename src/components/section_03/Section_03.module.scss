@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.section_03 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+
+    .h1 {
+        font-size: 2.6rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        color: #4F5665;
+        max-width: 40rem;
+    }
+
+    .divPlanCard {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 990px) {
+    .divPlanCard {
+        flex-direction: column;
+    }
+}

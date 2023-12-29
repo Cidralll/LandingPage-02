@@ -1,0 +1,27 @@
+.divCard {
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding-left: 0.5rem;
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.2rem;
+        padding-left: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .divCard{
+        margin-top: 1rem;
+    }
+}

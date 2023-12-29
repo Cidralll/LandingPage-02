@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+.planCard {
+    width: 20rem;
+    height: 36rem;
+    border: solid 1.5px #DDDDDD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1.3rem;
+    
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        padding-top: 1rem;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        width: 17rem;
+        height: 10rem;
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #4F5665;
+        }
+    }
+
+    .button {
+        border: 1.5px solid $main-orange;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $main-orange;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-radius: 20px;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    
+}
+
+.planCard:hover {
+    border-color: $main-orange;
+    .button {
+        background-color: $main-orange;
+        color: white;
+    }
+}

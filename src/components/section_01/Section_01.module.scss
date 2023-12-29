@@ -1,0 +1,81 @@
+@import '../../variables.scss';
+
+.section_01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100vw;
+    margin-top: 4.5rem;
+
+    .divTitles {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 3rem;
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            max-width: 40rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #4F5665;
+            font-weight: 400;
+            text-align: right;
+            max-width: 770px;
+            max-width: 40rem;
+        }
+    }
+    .divImg {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sectionCards {
+    max-width: 100vw;
+    margin-top: 4.6rem;
+    background-color: $main-orange;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1071px) {
+    .section_01 {
+        flex-direction: column;
+        .divTitles {
+            width: 100%;
+            max-width: 100vw;
+            padding-left: 0rem;
+            h1 {
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
+        .divImg {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .sectionCards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:510px) {
+    .section_01 {
+        margin-top: 0rem;
+    }
+}

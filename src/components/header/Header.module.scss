@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    max-width: 100vw;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+    position: relative;
+
+    .sectionLinks {
+        display: flex;
+        h3 {
+            font-size: 1.3rem;
+            padding-right: 0.8rem;
+            color: #4F5665;
+            font-weight: 500;
+            text-align: center;
+        }
+        h3:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 828px) {
+    .header {
+        flex-direction: column;
+    }
+}
+@media (max-width: 510px) {
+    .header {
+        .sectionLinks {
+            flex-direction: column;
+        }
+    }
+}
